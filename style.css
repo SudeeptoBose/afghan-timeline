@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
@@ -48,6 +48,7 @@ body {
 /* Grid */
 
 .card {
+    position: relative;
     box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.1);
     margin: auto;
     width: 90vw;
@@ -57,6 +58,36 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+}
+
+.card-year {
+    font-family: 'Bitter', serif;
+    position: absolute;
+    top: -2rem;
+    left: 1.75rem;
+    text-shadow: 2px 3px 5px rgb(0 0 0 / 40%);
+}
+
+.card-paragraph {
+    padding: 10%;
+}
+
+.card-image {
+    position: relative;
+    background-image: url(assets/afghan-hero-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+.card-image h1 {
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
 }
 
 /* Padding */
@@ -69,10 +100,22 @@ body {
     margin-top: 1.25rem;
 }
 
+.margin-top-l {
+    margin-top: 12rem;
+}
+
 /* Text style */
+
+.text-s {
+    font-size: 0.75rem;
+}
 
 .text-m {
     font-size: 1.5rem;
+}
+
+.text-l {
+    font-size: 4rem;
 }
 
 .text-center {
@@ -81,4 +124,23 @@ body {
 
 .line-height-m {
     line-height: 2.5rem;
+}
+
+/* Colors */
+
+.color-red {
+    color: red;
+}
+
+.all-cards{
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    left: 50%;
+    z-index: 0;
+    height: 12rem;
+    width: 4px;
+    background-color: black;
 }
