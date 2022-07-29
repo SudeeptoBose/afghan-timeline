@@ -23,6 +23,7 @@ body {
 }
 
 .hero-title {
+    box-sizing: border-box;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -31,4 +32,10 @@ body {
     font-family: 'Bitter', serif;
     padding: 1.25rem;
     color: azure;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
 }
