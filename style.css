@@ -33,7 +33,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     font-family: 'Yeseva One', cursive;
-    color: azure;
+    color: white;
 }
 
 .hero-grid {
@@ -115,6 +115,10 @@ body {
 }
 
 .text-l {
+    font-size: 2rem;
+}
+
+.text-xl {
     font-size: 4rem;
 }
 
@@ -143,4 +147,37 @@ body {
     height: 12rem;
     width: 4px;
     background-color: black;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width:550px){
+    .hero-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .text-m{
+        font-size: 0.75rem;
+    }
+
+    .text-l{
+        font-size: 1rem;
+    }
+
+    .text-xl{
+        font-size: 3rem;
+    }
+    
+    .line-height-m{
+        line-height: 1.5rem;
+    }
+
+    .card-image{
+        height: 300px;
+    }
 }
